@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="register.html">Register</a>
+            <a href="login.html">Login</a>
+            <a href="calculator.html">Calculator</a>
+        </nav>
+    </header>
+
+    <main class="calc-main">
+        <div class="calculator">
+            <input type="text" id="display" readonly value="0">
+            <div class="calculator-keys">
+                <button class="btn-key operator" onclick="clearDisplay()">C</button>
+                <button class="btn-key operator" onclick="deleteChar()">⌫</button>
+                <button class="btn-key operator" onclick="appendValue('/')">&divide;</button>
+                <button class="btn-key operator" onclick="appendValue('*')">&times;</button>
+
+                <button class="btn-key" onclick="appendValue('7')">7</button>
+                <button class="btn-key" onclick="appendValue('8')">8</button>
+                <button class="btn-key" onclick="appendValue('9')">9</button>
+                <button class="btn-key operator" onclick="appendValue('-')">-</button>
+
+                <button class="btn-key" onclick="appendValue('4')">4</button>
+                <button class="btn-key" onclick="appendValue('5')">5</button>
+                <button class="btn-key" onclick="appendValue('6')">6</button>
+                <button class="btn-key operator" onclick="appendValue('+')">+</button>
+
+                <button class="btn-key" onclick="appendValue('1')">1</button>
+                <button class="btn-key" onclick="appendValue('2')">2</button>
+                <button class="btn-key" onclick="appendValue('3')">3</button>
+                <button class="btn-key equals" onclick="calculateResult()">=</button>
+
+                <button class="btn-key zero" onclick="appendValue('0')">0</button>
+                <button class="btn-key" onclick="appendValue('.')">.</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
