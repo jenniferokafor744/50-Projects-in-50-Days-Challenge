@@ -1,0 +1,80 @@
+/* Center and style the login page cleanly */
+.login-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(212, 163, 115, 0.2);
+    border: 1px solid #faedcd;
+    text-align: left;
+}
+
+.form-container h1 {
+    text-align: center;
+    color: #bc6c25;
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+.form-subtitle {
+    text-align: center;
+    color: #8d6e63;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #4a3b32;
+    font-size: 14px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d4a373;
+    border-radius: 6px;
+    background-color: #fcf8f5;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #4a3b32;
+}
+
+.form-container input:focus {
+    outline: none;
+    border-color: #bc6c25;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(188, 108, 37, 0.2);
+}
+
+.submit-btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 12px;
+    background: #ccd5ae;
+    color: #3f4f34;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.submit-btn:hover {
+    background: #b7c49b;
+}
